@@ -1,0 +1,92 @@
+div.homePage{
+    button.theme{
+      position: absolute;
+      right: 10px;
+      top: 6px;
+      width: 90px;
+    }
+    div.item-list{
+      min-height: 278px;
+    }
+    a.viewMore{
+      position: absolute;
+      right: 10px;
+      top: 9px;
+
+      font-size: 16px;
+      line-height: 22px;
+      color: #1BC298;
+    }
+    div.news-row, div.carousel-row{
+      margin-bottom: 30px;
+    }
+    div.carousel-row{
+      width: 430px;
+      height: 320px;
+      div.carousel-content-wpr{
+        text-align: center;
+        position: relative;
+        img {
+          width: 100%;
+        }
+        &:after{
+          content: ' ';
+          width: 100%;
+          height: 70px;
+          opacity: 0.79;
+          background: #000000;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+        p{
+          position: absolute;
+          top: 254px;
+          left: 19px;
+          right: 0;
+          font-size: 14px;
+          color: #FFFFFF;
+          line-height: 24px;
+          z-index: 9;
+          margin:0;
+          text-align: left;
+        }
+      }
+      .ant-carousel .slick-slide {
+        text-align: center;
+        height: 320px;
+        line-height: 320px;
+        background: #364d79;
+        overflow: hidden;
+      }
+
+      .ant-carousel .slick-slide h3 {
+        color: #fff;
+      }
+    }
+    div.news-row{
+      width: 750px;
+      margin-left: 20px;
+    }
+    div.rate-row{
+      width: 779px;
+      margin-right: 21px;
+      .dropdown-wpr{
+        position: absolute;
+        right: 10px;
+        top: 9px;
+        a, .ant-dropdown-menu-item{
+          font-size: 16px;
+          line-height: 22px;
+          color: #666;
+        }
+        .anticon{
+          font-size: 14px;
+          color: #1BC298;
+        }
+      }
+    }
+    div.beian-row{
+      width: 400px;
+    }
+}

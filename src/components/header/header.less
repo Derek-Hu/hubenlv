@@ -1,0 +1,67 @@
+@import '../../styles/variables.less';
+
+@menu-color: #595857;
+
+div.header {
+  a {
+    font-size: 16px;
+  }
+  text-align: center;
+  &.black {
+    background-color: #000;
+    ul.ant-menu {
+      background-color: #000;
+    }
+  }
+
+  &.themeGray {
+    ul.ant-menu {
+      background-color: transparent;
+      border-bottom: none;
+      padding-top: 28px;
+    }
+    .ant-menu-horizontal > .ant-menu-item:hover {
+      border-bottom: none;
+    }
+    .ant-menu-horizontal > .ant-menu-item {
+      border-bottom: none;
+    }
+  }
+
+  .ant-menu-horizontal > .ant-menu-item > a {
+    color: white;
+  }
+  .ant-menu-horizontal > .ant-menu-item-selected {
+    border-bottom: 1px solid #000;
+    a {
+      color: #1BC298;
+    }
+  }
+  .ant-menu-horizontal > .ant-menu-item:hover {
+    border-bottom: 1px solid #000;
+  }
+  .ant-menu-horizontal > .ant-menu-item {
+    border-bottom: 1px solid #000;
+  }
+  ul.ant-menu {
+    line-height: 48px;
+  }
+  li {
+    width: 200px;
+    position: relative;
+  }
+  .ant-menu-item-selected.ant-menu-item > a:before {
+    box-sizing: content-box;
+    position: absolute;
+    border-bottom: 7px solid #1BC298;
+    left: 50%;
+    margin-left: -14px;
+    bottom: -1px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    height: 0;
+    width: 14px;
+    top: 100%;
+    margin-top: -6px;
+  }
+}

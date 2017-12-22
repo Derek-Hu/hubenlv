@@ -1,0 +1,39 @@
+@import '../../styles/variables.less';
+
+div.news{
+  margin: 56px 0 104px;
+  position: relative;
+  a.dynamic-info-link{
+    display: none;
+    &.active{
+      display: block;
+    }
+  }
+  div.info-abstract{
+    margin-bottom: 31px;
+  }
+  div.right-layout{
+    & > div{
+      min-height: @news-min-height;
+    }
+  }
+}
+
+div.news-detail{
+  padding: 24px 22px 24px 24px;
+  h1{
+    font-size: 20px;
+    color: #333;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 14px;
+    margin-bottom: 20px;
+  }
+  div.content  {
+    font-size: 14px;
+    line-height: 20px;
+    color: #666;
+    text-align: justify;
+    letter-spacing: 2px;
+  }
+}
