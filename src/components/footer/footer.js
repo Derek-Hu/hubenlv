@@ -10,8 +10,8 @@ export class Footer extends React.Component {
     return <div className={classNames('footer', this.props.type || 'white')}>
       <Row>
         <Col span={24}>
-            <p>免费服务热线：400-123-1234 大连市民间借贷服务有限公司 版权所有 辽ICP备12345678号</p>
-            <p>Copyright&copy;2017.All Right Reserved</p>
+            <p>版权所有 沪ICP备17050690号</p>
+            <p>Copyright&copy;2018.All Right Reserved</p>
         </Col>
       </Row>
     </div>

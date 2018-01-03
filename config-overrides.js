@@ -19,10 +19,10 @@ module.exports = function override(config, env) {
   })(config, env);
 
   config.resolve.alias['__Source'] = path.resolve(__dirname, 'src/');
-  if(process.env.NODE_ENV === 'production'){
+  // if(process.env.NODE_ENV === 'production'){
     // remove sourcemap in production
-    config.devtool = '';
-  }
+    // config.devtool = '';
+  // }
   config = rewireDefinePlugin(config, env, {
     'process.env.MARKDOWN': JSON.stringify(ParseReadMe(ReadMEs)),
     'process.env.MENU_HASH': JSON.stringify(RequiredHash)

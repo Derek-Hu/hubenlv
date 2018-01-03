@@ -10,11 +10,10 @@ export class HomePage extends React.Component {
 
   render() {
     return <div>
-      <Layout>
-        <Toolbar/>
-      </Layout>
       <Header className="black" selected={ROUTE_PATH.home}/>
-      <Home />
+      <Layout>
+        <Home />
+      </Layout>
       <Footer type="gray"/>
     </div>
     ;
