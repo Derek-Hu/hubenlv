@@ -3,12 +3,9 @@ const rewireLess = require('react-app-rewire-less');
 const path = require('path');
 const rewireDefinePlugin = require('react-app-rewire-define-plugin')
 const {ParseReadMe} = require('./plugins/markdown-meta-plugin');
-const RequiredHash = require('./plugins/required-menu-hash-plugin');
 
 const ReadMEs = {
-  news: path.resolve(__dirname, 'src/_posts/news'),
-  knowledge: path.resolve(__dirname, 'src/_posts/knowledge'),
-  partners: path.resolve(__dirname, 'src/_posts/partners')
+  javascript: path.resolve(__dirname, 'src/_posts/javascript')
 }
 
 module.exports = function override(config, env) {
@@ -24,8 +21,7 @@ module.exports = function override(config, env) {
     // config.devtool = '';
   // }
   config = rewireDefinePlugin(config, env, {
-    'process.env.MARKDOWN': JSON.stringify(ParseReadMe(ReadMEs)),
-    'process.env.MENU_HASH': JSON.stringify(RequiredHash)
+    'process.env.MARKDOWN': JSON.stringify(ParseReadMe(ReadMEs))
   })
 
   return config;

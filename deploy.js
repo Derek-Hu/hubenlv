@@ -6,7 +6,7 @@ var config = {
     password: "BenIo2017", // optional, prompted if none given
     host: "byu3220180001.my3w.com",
     port: 21,
-    localRoot: __dirname + "/src",
+    localRoot: __dirname + "/build",
     remoteRoot: "/htdocs/",
     include: [],
     exclude: ['.git', '.idea', 'tmp/*', 'build/*', 'node_modules/*']

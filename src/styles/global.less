@@ -2,47 +2,31 @@
 
 body {
   margin: 0 auto;
-  min-width: @body-min-width;
   width: 100%;
   font-family: HelveticaNeue proxima-nova, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Micro Hei Mono", "WenQuanYi Zen Hei", "WenQuanYi Zen Hei", "Apple LiGothic Medium", SimHei, "ST Heiti", "WenQuanYi Zen Hei Sharp";
   -webkit-font-smoothing: antialiased;
 }
 
-p.notExists{
-  text-align: center;
-  color: #666;
-}
-.banner {
-  h2 {
-    line-height: 54px;
-    font-size: 46px;
-    font-weight: lighter;
-    font-weight: 100;
-    margin-bottom: 50px;
-  }
-  p {
-    font-size: 18px;
-    font-weight: 100;
-    line-height: 1.44;
-  }
-}
-
-.ant-btn.theme, .ant-btn.theme:active, .ant-btn.theme:hover, .ant-btn.theme:visited, .ant-btn.theme:focus {
-  background-color: #1BC298;
-  border-color: #1BC298;
-  color: #FFF;
-  font-size: 14px;
-  border-radius: 0;
-  height: 28px;
-}
-
-a:visited, a:focus, a:hover, a:active {
-  text-decoration: none;
-}
-
 .markdown-content {
+  padding: 1em 1em;
+  font-size: 16px;
+  color: #333;
   p {
     text-indent: 2em;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    tr {
+      border: 1px solid #eaeaea;
+    }
+    td {
+      padding: 10px;
+    }
   }
   .markdown-img-wpr {
     text-align: center;
@@ -58,28 +42,4 @@ a:visited, a:focus, a:hover, a:active {
     margin-top: 1.5em;
     color: #000;
   }
-}
-a.back{
-  font-size: 16px;
-
-  color: #1BC298;
-  &:hover, &:focus, &:visited {
-    color: #1BC298;
-  }
-}
-::-moz-placeholder {
-  color: #CCCCCC;
-}
-
-::-webkit-input-placeholder {
-  color: #CCCCCC;
-}
-
-:-ms-input-placeholder {
-  color: #CCCCCC
-}
-
-.login-background, .register-background{
-  background: url('../components/images/register-background@1x.png') center no-repeat;
-  background-size: cover;
 }

@@ -18,7 +18,7 @@ function ParseReadMe(options){
 
       const filePath = path.relative(options[key], file);
       const pathHash = crypto.createHash('sha256').update(key+'|'+filePath);
-      const contentUrl = pathHash.digest('hex')+'.js';
+      const contentUrl = pathHash.digest('hex');
 
       const content = fs.readFileSync(file, 'utf8');
       const tokens = MD.parse(content, {});
@@ -29,7 +29,7 @@ function ParseReadMe(options){
         fs.mkdirSync(generatedPath);
       }
 
-      fs.writeFileSync(path.join(generatedPath, contentUrl), `export default {content: \`${htmls}\`}`)
+      fs.writeFileSync(path.join(generatedPath, contentUrl + '.js'), `export default {content: \`${htmls}\`}`)
 
       const block = tokens.find(token => token.type === 'front_matter');
 
